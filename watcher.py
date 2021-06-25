@@ -10,7 +10,7 @@ f = fg('#9370DB')
 
 clear = lambda: os.system('cls') if os.name == 'nt' else os.system('clear')
 
-token = "your token"
+token = "your token" #enterurtoken
 
 os.system('title [Krii$ 4L Tool]')
 
@@ -31,10 +31,10 @@ kriis()
 
 def kriisK(cID):
   z = 0
-  payload = {'content': "the msg to send here"}
+  payload = {'content': "the msg to send here"} #messagehere
   header = {'authorization': token}
-  time.sleep(420)
-  r = requests.post(f"https://discord.com/api/v8/channels/{cID}/messages", data=payload, headers=header)
+  time.sleep(420) #delayherelol
+  r = requests.post(f"https://discord.com/api/v9/channels/{cID}/messages", data=payload, headers=header)
   if r.status_code == 429:
     print(f"[{f}~ {p}STATUS {f}~{R}] Â· {p}Error Couldn't Send{R}")
   if r.status_code == 200 or r.status_code == 201 or r.status_code == 204:
